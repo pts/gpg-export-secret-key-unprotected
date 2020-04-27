@@ -28,7 +28,7 @@ Q1. What are the system requirements?
 
 A1. All modern Unix systems (e.g. Linux, FreeBSD, macOS, OpenBSD, NetBSD)
     with GPG 1.x or 2.x installed should work. It works with many shells
-    (Bash, Zsh, Dash Pdksh, Busybox sh etc.).
+    (Bash, Zsh, Dash, Pdksh, BusyBox sh etc.).
 
 Q2. Does it work on Microsoft Windows?
 
@@ -52,7 +52,8 @@ A5. It creates a temporary .gnupg directory, copies over the protected
 Q6. Is it a good idea to store and archive unprotected secret key files?
 
 A6. It's a bad idea in most cases. If the attacker can get a copy of the
-    unprotected secret key file, they can impersonate you, and they can read
-    the intercepted messages which were encrypted for you.
+    unprotected secret key file, they can impersonate you (e.g. they can
+    sign messages with your key), and they can read the intercepted messages
+    which were encrypted for you.
 
 __END__
